@@ -5,7 +5,11 @@
     <p>String renderizada com interpolação : {{ url }}</p>
     <p>A soma de 4 + 5 : {{ 4 + 5 }}</p>
     <p>A soma de 4 + 5 não é {{ 4 + 5 + getValor() }}</p>
+    <p>O curso Angular ajuda ? {{ cursoAngular && getCursoAngular() }} </p>
   </article>
 
+  <h3>Property Binding</h3>
+  <img src="{{ urlImagem }}">
+  <img [src]="urlImagem2">
 
 </section>
